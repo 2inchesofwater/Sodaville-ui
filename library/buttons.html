@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Sodaville 2019 - Buttons</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<!-- social sharing meta-content -->
+	<link rel="stylesheet" type="text/css" href="../assets/css/_specimens.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+</head>
+
+
+<body>
+<section class="wrapper no-grid">
+	<h1>Buttons</h1>
+</section>
+
+<section class="wrapper">
+	<h2>Buttons</h2>
+	<div class="tilesCollection">
+		<div class="tile">
+			<h3>Dominant</h3>
+			<figure class="sample">
+				<button class="dominant">Dominant</button>
+				<figcaption><cite>.dominant</cite></figcaption>
+			</figure>
+		</div>
+		<div class="tile">
+			<h3>Base</h3>
+			<figure class="sample">
+				<button class="base">Base</button>
+				<figcaption><cite>.base or [no variant]</cite></figcaption>
+			</figure>
+		</div>
+		<div class="tile">
+			<h3>Recessive</h3>
+			<figure class="sample">
+				<button class="recessive">Recessive</button>
+				<figcaption><cite>.recessive</cite></figcaption>
+			</figure>
+		</div>
+		<div class="tile">
+			<h3>Naked</h3>
+			<figure class="sample">
+				<button class="naked">Naked</button>
+				<figcaption><cite>.naked</cite></figcaption>
+			</figure>
+		</div>
+		<div class="tile">
+			<h3>Icon only</h3>
+			<figure class="sample">
+				<button class="icon">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M21 3.01H3c-1.1 0-2 .9-2 2V9h2V4.99h18v14.03H3V15H1v4.01c0 1.1.9 1.98 2 1.98h18c1.1 0 2-.88 2-1.98v-14c0-1.11-.9-2-2-2zM11 16l4-4-4-4v3H1v2h10v3z"/></svg>
+				</button>
+				<figcaption><cite>.icon</cite></figcaption>
+			</figure>
+		</div>		
+	</div>
+</section>
+
+<section class="wrapper">
+	<h2>Properties</h2>
+	<div class="tilesCollection">
+		<div class="tile">
+			<h3>Shared properties</h3>
+			<p>Many visual properties are shared across all types of buttons</p>
+			<dl>
+				<dt><strong>Property</strong></dt>
+				<dd><strong>UI Flex variable names</strong></dt>
+				<dt>Padding</dt>
+				<dd>
+					<cite>@button-padding</cite>
+					<p>Accepts CSS' standard one-, two-, and four-value shortcut syntax</p>
+				</dd>
+				<dt>Font family</dt>
+				<dd>
+					<cite>@button-fontFamily</cite>
+				</dd>
+				<dt>Font size</dt>
+				<dd>
+					<cite>@button-fontSize</cite>
+				</dd>
+				<dt>Line height</dt>
+				<dd>
+					<cite>@button-lineHeight</cite>
+				</dd>
+				<dt>Border width</dt>
+				<dd>
+					<cite>@button-borderWidth</cite>
+					<cite>@button-borderWidth-bottom</cite>
+					<p>Each variable accepts one value only</p>
+				</dd>
+				<dt>Border-radius</dt>
+				<dd>
+					<cite>@button-borderRadius</cite>
+				</dd>
+				<dt>Icons</dt>
+				<dd>
+					<cite>@button-icon-size</cite>
+					<cite>@button-icon-gap</cite>
+				</dd>				
+			</dl>
+			<p>All buttons have a shared :focus state, defined by _____</p>
+			<p>All button variants must have a base state, as well as :hover and :active states</p>
+		</div>	
+	</div>
+	<div class="tilesCollection">
+		<div class="tile">
+			<h3>Dominant</h3>
+			<dl>
+				<dt><strong>Property</strong></dt>
+				<dd><strong>UI Flex variable names</strong></dt>			
+				<dt>Background</dt>
+				<dd>
+					<cite>@button-dominant-bg-base</cite>
+					<cite>@button-dominant-bg-hover</cite>
+					<cite>@button-dominant-bg-active</cite>
+				</dd>
+				<dt>Font color</dt>
+				<dd>
+					<cite>@button-dominant-color-base</cite>
+					<cite>@button-dominant-color-hover</cite>
+					<cite>@button-dominant-color-active</cite>
+				</dd>				
+				<dt>Border color</dt>
+				<dd>
+					<cite>@button-dominant-borderColor-base</cite>
+					<cite>@button-dominant-borderColor-hover</cite>
+					<cite>@button-dominant-borderColor-active</cite>
+					<p>Write an override if you want to use a different border-color-bottom property</p>
+				</dd>				
+			</dl>
+		</div>	
+		<div class="tile">
+			<h3>Base / default</h3>
+			<dl>
+				<dt><strong>Property</strong></dt>
+				<dd><strong>UI Flex variable names</strong></dt>			
+				<dt>Background</dt>
+				<dd>
+					<cite>@button-bg-base</cite>
+					<cite>@button-bg-hover</cite>
+					<cite>@button-bg-active</cite>
+				</dd>
+				<dt>Font color</dt>
+				<dd>
+					<cite>@button-color-base</cite>
+					<cite>@button-color-hover</cite>
+					<cite>@button-color-active</cite>
+				</dd>				
+				<dt>Border color</dt>
+				<dd>
+					<cite>@button-borderColor-base</cite>
+					<cite>@button-borderColor-hover</cite>
+					<cite>@button-borderColor-active</cite>
+					<p>Write an override if you want to use a different border-color-bottom property</p>
+				</dd>				
+			</dl>
+		</div>
+		<div class="tile">
+			<h3>Recessive</h3>
+			<dl>
+				<dt><strong>Property</strong></dt>
+				<dd><strong>UI Flex variable names</strong></dt>			
+				<dt>Background</dt>
+				<dd>
+					<cite>@button-recessive-bg-base</cite>
+					<cite>@button-recessive-bg-hover</cite>
+					<cite>@button-recessive-bg-active</cite>
+				</dd>
+				<dt>Font color</dt>
+				<dd>
+					<cite>@button-recessive-color-base</cite>
+					<cite>@button-recessive-color-hover</cite>
+					<cite>@button-recessive-color-active</cite>
+				</dd>				
+				<dt>Border color</dt>
+				<dd>
+					<cite>@button-recessive-borderColor-base</cite>
+					<cite>@button-recessive-borderColor-hover</cite>
+					<cite>@button-recessive-borderColor-active</cite>
+					<p>Write an override if you want to use a different border-color-bottom property</p>
+				</dd>				
+			</dl>
+		</div>	
+		<div class="tile">
+			<h3>Naked</h3>
+			<dl>
+				<dt><strong>Property</strong></dt>
+				<dd><strong>UI Flex variable names</strong></dt>			
+				<dt>Background</dt>
+				<dd>
+					<cite>@button-naked-bg-base</cite>
+					<cite>@button-naked-bg-hover</cite>
+					<cite>@button-naked-bg-active</cite>
+				</dd>
+				<dt>Font color</dt>
+				<dd>
+					<cite>@button-naked-color-base</cite>
+					<cite>@button-naked-color-hover</cite>
+					<cite>@button-naked-color-active</cite>
+				</dd>				
+				<dt>Border color</dt>
+				<dd>
+					<cite>@button-naked-borderColor-base</cite>
+					<cite>@button-naked-borderColor-hover</cite>
+					<cite>@button-naked-borderColor-active</cite>
+					<p>Write an override if you want to use a different border-color-bottom property</p>
+				</dd>				
+			</dl>
+		</div>
+		<div class="tile">
+			<h3>Icon only</h3>
+			<dl>
+				<dt><strong>Property</strong></dt>
+				<dd><strong>UI Flex variable names</strong></dt>			
+				<dt>Background</dt>
+				<dd>
+					<cite>@button-iconOnly-bg-base</cite>
+					<cite>@button-iconOnly-bg-hover</cite>
+					<cite>@button-iconOnly-bg-active</cite>
+				</dd>
+				<dt>Font color</dt>
+				<dd>
+					<cite>@button-iconOnly-color-base</cite>
+					<cite>@button-iconOnly-color-hover</cite>
+					<cite>@button-iconOnly-color-active</cite>
+				</dd>				
+				<dt>Border color</dt>
+				<dd>
+					<cite>@button-iconOnly-borderColor-base</cite>
+					<cite>@button-iconOnly-borderColor-hover</cite>
+					<cite>@button-iconOnly-borderColor-active</cite>
+					<p>Write an override if you want to use a different border-color-bottom property</p>
+				</dd>
+				<dt>Icon size</dt>
+				<dd>
+					<cite>@button-iconOnly-icon-size</cite>
+				</dd>
+			</dl>
+		</div>			
+	</div>
+</section>
+
+<section class="wrapper">	
+	<h2>How to use buttons</h2>
+	<div class="tilesCollection">
+		<div class="tile">
+			<h3>Dominant</h3>
+			<p>A Dominant button is only used when the user is about to commit to a permanent change</p>
+			<p>We pair <strong>Dominant</strong> buttons with <strong>Naked</strong> buttons, to give even greater emphasis to the primary call-to-action</p>
+			<p>Never pair a Dominant with a Base or Recessive button</p>
+			<figure class="sample">
+				<div class="buttonsCollection">
+					<button class="dominant">Dominant</button>
+					<button class="naked">Naked</button>
+				</div>
+			</figure>
+		</div>
+		<div class="tile">
+			<H3>Base</h3>
+			<p>Use a Base (or default) button when a button appears on its own (but always within a Buttons Collection)</p>
+			<p>We pair <strong>Base</strong> buttons with <strong>Naked</strong> buttons when the UI requires a Cancel or Back option</p>
+			<figure class="sample">
+				<div class="buttonsCollection">
+					<button class="base">Base</button>
+					<button class="naked">Naked</button>
+				</div>
+			</figure>
+		</div>	
+		<div class="tile">
+			<p>We pair <strong>Base</strong> buttons with <strong>Recessive</strong> buttons when it's unclear what the user's intention will be</p>
+			<figure class="sample">
+				<div class="buttonsCollection">
+					<button class="base">Base</button>
+					<button class="recessive">Recessive</button>
+				</div>
+			</figure>
+		</div>		
+	</div>
+</section>
+
+	
+</body>
+</html>

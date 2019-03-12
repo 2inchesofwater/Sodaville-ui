@@ -1,0 +1,52 @@
+input {
+	display: block;
+	width: 100%;
+	padding: @input-padding;
+	background: @input-bg;
+	border: @input-border;
+	
+	font-size: @input-fontSize;
+}
+
+fieldset {
+	border: @input-border;
+	> ul {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin: 0;
+		margin-bottom: @input-selection-gap;
+		padding: 0;
+		> label {
+			margin: 0;
+		}
+	}
+	input {
+		width: auto;
+		margin: 0 @input-icon-gap 0 0;	
+	}
+	label {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		cursor: pointer;
+		// TODO: Replace localised styles with a Typography mixin
+		font-size: @fontSize-base;
+		color: @fontColor-base;
+	}
+}
+
+legend {
+	// TODO: Replace localised styles with a Typography mixin
+	font-size: @fontSize-base;
+	line-height: @lineHeight-base;
+	color: @fontColor-soft;
+}

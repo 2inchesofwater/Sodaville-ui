@@ -1,0 +1,46 @@
+input {
+	border-bottom: @input-borderBottom;
+	border-radius: @input-borderRadius;
+	transition: @transition-base !important;
+	color: @fontColor-base;
+	font-family: @fontFamily-base;
+	
+	&::placeholder {
+		color: @fontColor-soft;
+	}
+	&:hover {
+		border: @input-border-hover;
+		border-bottom: @input-borderBottom-hover;
+	}
+	&:active {
+		border: @input-border-active;
+		border-bottom: @input-borderBottom-active;	
+	}
+	&:focus,
+	&:focus-within {
+		outline: none;
+		border: @input-border-active;
+		border-bottom: @input-borderBottom-active;	
+	}
+	&[readonly] {
+		background: @input-bg-readonly;
+		border: @input-border-readonly;
+		border-bottom: @input-borderBottom-readonly;
+		pointer-events: none;
+	}
+	&[disabled] {
+		background: @input-bg-disabled;
+		border: @input-border-disabled;
+		border-bottom: @input-borderBottom-disabled;
+		pointer-events: none;
+	}
+	&:valid {
+		// Override only
+	}
+	&:invalid,
+	&:out-of-range {
+		background: @input-bg-invalid;
+		border: @input-border-invalid;
+		border-bottom: @input-borderBottom-invalid;		
+	}
+}

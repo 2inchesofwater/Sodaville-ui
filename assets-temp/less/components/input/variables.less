@@ -1,0 +1,66 @@
+/* Input fields */
+@input-padding: @spacer-sm;
+@input-border: 1px solid @palette-gray-10;
+@input-borderBottom: 2px solid @palette-gray-20;
+@input-borderRadius: 0;
+@input-bg: @palette-white;
+@input-fontSize: @fontSize-base;
+
+@input-bg-hover: @input-bg;
+@input-border-hover: 1px solid @palette-gray-20;
+@input-borderBottom-hover: 2px solid @palette-gray-40;
+
+@input-bg-active: @input-bg;
+@input-border-active: 1px solid @palette-gray;
+@input-borderBottom-active: 2px solid @palette-gray;
+
+@input-bg-readonly: @input-bg;
+@input-border-readonly: 1px dotted @palette-gray-10;
+@input-borderBottom-readonly: 2px dotted @palette-gray-20;
+
+@input-bg-disabled: lighten(@palette-gray-5,50%);
+@input-border-disabled: 1px solid @palette-gray-10;
+@input-borderBottom-disabled: 2px solid @palette-gray-20;
+
+@input-bg-valid: lighten(@palette-green-80,90%);
+@input-border-valid: 1px solid @palette-green-80;
+@input-borderBottom-valid: 2px solid @palette-green-120;
+
+@input-bg-invalid: lighten(@palette-red-80,90%);
+@input-border-invalid: 1px solid @palette-red-80;
+@input-borderBottom-invalid: 2px solid @palette-red-120;
+
+
+/* Labels */
+@label-fontSize: @fontSize-base;
+@label-fontColor: @fontColor-soft;
+@label-gap: @spacer-xs;
+
+/* Icons inside inputs */
+@input-icon-gap: @spacer-xs;
+@input-icon-size-inline: @lineHeight-base; // For icons which appear INSIDE a standard text-input field 
+
+/* Fieldset and Legend */
+@legend-fontSize: @fontSize-base;
+@legend-fontColor: @fontColor-soft;
+@legend-gap: (@spacer-xs / 2);
+
+/* Checkboxes and Radio */
+@input-selection-size: @spacer-xl ; // For radio and checkbox inputs
+@input-selection-bg-empty: @input-bg;
+@input-selection-bg-active: @fontColor-feature;
+@input-selection-border-empty: 2px solid @palette-gray-20;
+@input-selection-border-hover: 2px solid @palette-gray-40;
+@input-selection-border-active: 2px solid @sodaville-gold-120;
+@input-selection-fontWeight: bold;
+@input-selection-fontSize: @fontSize-xl;
+@input-selection-fontColor: @fontColor-inverse;
+@input-selection-textShadow: @dropShadow-sm;
+
+@input-selection-gap: @spacer-sm; // used for a margin-bottom between selection options
+@input-selection-mark-size: ~"calc(" @input-selection-size ~"+ 4px)"; // Add up the TOTAL border-size
+@input-checkbox-borderRadius: @borderRadius-sm;
+@input-checkbox-mark: '\2714'; //a tick glyph - hopefully
+
+@input-radio-borderRadius: 50%;
+@input-radio-mark-border: @spacer-sm solid @input-selection-bg-active;

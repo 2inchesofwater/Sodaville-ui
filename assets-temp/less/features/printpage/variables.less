@@ -1,0 +1,15 @@
+@printpage-ratio: 1.414;
+// The printpage ratio helps calculate the min-height of a typical printed page.
+// The width of the page is fixed; it's represented by one of the site's media-query breakpoints.
+// The height of the page changes to match the breakpoint.
+// For an A4 printed page in portrait, the ratio would be 1.414 - that is, 29.7cm divided by 21.0cm
+// For an A4 printed page in landscape, the ratio would be 0.707 - 21cm divided by 29.7cm
+
+@printpage-gap: 2vw;
+@printpage-minHeight: @breakpoint-tablet; // ~"calc(100% - (" @printpage-gap ~"* 2) * " @printpage-ratio ~")";
+@printpage-bg: @palette-white;
+@printpage-border: 1px solid @palette-gray;
+@printpage-dropShadow: @dropShadow-lg;
+
+@printpage-image-bg: @palette-gray-10;
+@printpage-image-border: 2px solid @palette-gray;

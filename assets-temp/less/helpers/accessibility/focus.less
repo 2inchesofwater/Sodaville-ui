@@ -1,0 +1,12 @@
+.mixin-focus(@bg: @link-bg, @border: @link-bg-border,@width:@link-bg-width, @height:@link-bg-height) {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	left: @width * -1;
+	top: @height * -1;	
+	width: calc(~"100% + " @width );
+	height: calc(~"100% + " @height );
+	background: @bg;
+	border: @border;
+	display: block;
+}

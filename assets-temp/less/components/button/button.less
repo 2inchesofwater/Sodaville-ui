@@ -1,0 +1,69 @@
+button,
+.button {
+	border-bottom: @button-borderBottom;
+	text-transform: @button-textTransform;
+	box-shadow: @button-boxShadow;
+	cursor: pointer;
+	position: relative;
+	&:after {
+		.mixin-focus;
+	}
+	&:focus {
+		outline: none;
+	}
+	&:focus:after {
+		background: @link-bg-focus;
+		border: @link-bg-border-focus;
+	}
+	
+	&:hover,
+	&:active {
+		background: @button-bg-hover;
+		border: @button-border-hover;
+		border-bottom: @button-borderBottom-hover;
+		color: @button-fontColor-hover;
+		box-shadow: @button-boxShadow-hover;
+	}
+
+	&.dominant {
+		background: @button-bg-dominant;
+		border: @button-border-dominant;
+		border-bottom: @button-borderBottom-dominant;
+		color: @button-fontColor-dominant;		
+		&:hover,
+		&:active {
+			background: @button-bg-dominant-hover;
+			border: @button-border-dominant-hover;
+			border-bottom: @button-borderBottom-dominant-hover;
+			color: @button-fontColor-dominant-hover;
+		}
+	}	
+	
+	&.recessive {
+		background: @button-bg-recessive;
+		border: @button-border-recessive;
+		border-bottom: @button-borderBottom-recessive;
+		color: @button-fontColor-recessive;		
+		&:hover,
+		&:active {
+			background: @button-bg-recessive-hover;
+			border: @button-border-recessive-hover;
+			border-bottom: @button-borderBottom-recessive-hover;
+			color: @button-fontColor-recessive-hover;
+		}
+	}
+	
+	&.naked {
+		background: @button-bg-naked;
+		border: @button-border-naked;
+		border-bottom: @button-borderBottom-naked;
+		color: @button-fontColor-naked;		
+		&:hover,
+		&:active {
+			background: @button-bg-naked-hover;
+			border: @button-border-naked-hover;
+			border-bottom: @button-borderBottom-naked-hover;
+			color: @button-fontColor-naked-hover;
+		}
+	}
+}

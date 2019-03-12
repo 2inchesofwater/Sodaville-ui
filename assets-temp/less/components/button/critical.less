@@ -1,0 +1,32 @@
+.buttonsCollection {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: -@buttonsCollection-gap;
+	button,
+	.button {
+		margin-bottom: @buttonsCollection-gap;
+	}
+	@media (min-width: @breakpoint-tablet) {
+		flex-direction: row;
+		button,
+		.button {
+			margin-right: @buttonsCollection-gap;
+		}
+	}
+}
+
+button,
+.button {
+	display: flex;
+	align-items: center;
+	margin: 0;
+	padding: @button-padding;
+	background: @button-bg;
+	border: @button-border;
+	color: @button-fontColor;
+	transition: @transition-base !important;
+	
+	&.icon {
+		padding: @button-iconOnly-padding;
+	}
+}

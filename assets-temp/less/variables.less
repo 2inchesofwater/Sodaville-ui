@@ -1,0 +1,96 @@
+@import (optional) "overrides/variables";
+
+@palette-gray:					#333333;
+@palette-gray-120:				#181818;
+@palette-gray-80:				#4C4945;
+@palette-gray-60:				#6D675B;
+@palette-gray-40:				#928D84;
+@palette-gray-20:				#C1C0BE;
+@palette-gray-10:				#dad9d8;
+@palette-gray-5:				#e6e6e5;
+@palette-white: 				#FFFFFF;
+@palette-black: 				@palette-gray;
+
+@palette-green-80:				#5ba854;
+@palette-green-120:				#329229;
+@palette-red-80:				#fe7f3a;
+@palette-red-120:				#f35600;
+@palette-yellow-80:				@sodaville-gold-80;
+@palette-yellow-120:			@sodaville-gold-120;
+@palette-blue-80:				#7286af;
+@palette-blue-120:				#3b4e74;
+@palette-gradient:				linear-gradient(to top, @palette-gray-80 0%,@palette-gray 100%);
+
+@palette-success:				@palette-green-80;
+@palette-danger:				@palette-red-80;
+@palette-warning:				@palette-yellow-80;
+
+@fontColor-base:				@palette-gray;
+@fontColor-strong:		 		@palette-gray-120;
+@fontColor-soft:				@palette-gray-40;
+@fontColor-inverse:				@palette-white;
+@fontColor-feature: 			@sodaville-gold;
+@fontColor-heading: 			@palette-gray;
+@fontColor-link: 				@sodaville-complementary-120;
+@fontColor-link-hover: 			@sodaville-complementary-80;
+
+@fontFamily-base:				'Raleway', helvetica, arial, sans-serif;
+@fontFamily-heading:			'Raleway', helvetica, arial, sans-serif;
+
+@fontSize-base: 				0.9rem; // 16px tends to be browser-default
+@fontSize-lg:					1.1rem;
+@fontSize-xl:					1.3rem;
+@fontSize-xxl:					1.5rem;
+@fontSize-sm:					0.8rem;
+@fontSize-xs:					0.7rem;
+
+@lineHeight-base:				1rem;
+@lineHeight-lg: 				1.2rem;
+@lineHeight-xl: 				1.3rem;
+@lineHeight-xxl: 				1.4rem;
+@lineHeight-sm: 				0.9rem;
+@lineHeight-xs: 				0.8rem;
+
+@iconSize-base: 				@lineHeight-base;
+@iconSize-lg:					@lineHeight-lg;
+@iconSize-xl:					@lineHeight-xl;
+@iconSize-sm:					@lineHeight-sm;
+@iconSize-xs:					@lineHeight-xs;
+
+@spacer-base:					@lineHeight-base;
+@spacer-lg: 					@lineHeight-lg;
+@spacer-xl: 					@lineHeight-xl;
+@spacer-sm: 					0.5rem;
+@spacer-xs: 					0.25rem;
+
+@borderRadius-base: 			0.5rem;
+@borderRadius-lg:				0.75rem;
+@borderRadius-sm:				0.25rem;
+	
+@transition-base:				all 0.25s ease-in-out;
+@transition-lg: 				all 0.75s ease-in-out;
+@transition-sm:					all 0.1s ease-in-out;
+
+@dropShadow-base:				0px 3px 10px fade(@palette-black,15%); 
+@dropShadow-lg:					0px 5px 15px fade(@palette-black,15%);
+@dropShadow-sm:					0px 0px 3px fade(@palette-black,15%);
+
+@textShadow-base:				0px 0px 3px fade(@palette-black,100%);
+@link-decoration: 				underline;
+
+@text-maxWidth: 				50em;
+@image-minHeight:				200px;
+@image-maxHeight:				350px;
+
+@border-width:					1px;
+@panel-bg:						@palette-white;
+@panel-border-color:			@palette-gray-40;
+
+@breakpoint-minimum:			560px; // upper limit  
+@breakpoint-tablet: 			560px; // lower limit of medium devices 
+@breakpoint-computer:			800px; // lower limit
+@breakpoint-widescreen:			1200px; // lower limit
+@breakpoint-maximum: 			2000px; // upper limit
+@breakpoint-collapse:			@breakpoint-computer;
+
+@grid-gutter:					@spacer-sm;

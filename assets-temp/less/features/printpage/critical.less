@@ -1,0 +1,49 @@
+.printpage {
+	// Printpage Should always run 100% of its available width
+	// It can have a min-height via an override
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: @printpage-bg;
+	border: @printpage-border;
+	padding: @printpage-gap;
+	width: 100%;
+	min-height: @printpage-minHeight;
+	
+	&:after {
+		content: '';
+		position: absolute;
+		display: block;
+		top: @printpage-gap;
+		left: @printpage-gap;
+		width: ~"calc(100% - " (@printpage-gap * 2) ~")";
+		height: ~"calc(100% - " (@printpage-gap * 2) ~")";
+		box-sizing: border-box;
+		background: @printpage-image-bg;
+	}
+}
+
+.printpage img {
+	// The image itself should run as wide as possible but no wider
+	// Its height should always be proportionate 
+	// The image should be horizontally (and maybe vertically) centered if it doesn't fill its available space
+	position: relative;
+	z-index: 2;
+	display: block;
+	
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
+
+    box-sizing: border-box; 
+}
+
+.printpage-loading {
+	position: absolute;
+    display: flex;
+    z-index: 1;
+    padding-bottom: @icon-loading-size * 2; 
+}

@@ -1,0 +1,15 @@
+.loading-icon {
+	display: flex;
+	width: @icon-loading-size;
+	height: @icon-loading-size;
+	align-items: center;
+    justify-content: center;
+	.mixin-loadingSpin(@icon-loading-duration);
+	
+	svg {
+		min-width: 100%;
+	    min-height: 100%;
+	    max-width: 100%;
+	    max-height: 100%;
+	}
+}

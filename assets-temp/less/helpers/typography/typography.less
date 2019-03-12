@@ -1,0 +1,109 @@
+
+p a {
+	z-index: 1;
+	position: relative;
+	&:after {
+		.mixin-focus;
+	}
+	&:focus {
+		outline: none;
+	}
+	&:focus:after {
+		background: @link-bg-focus;
+		border: @link-bg-border-focus;
+	}
+}
+section {
+
+}
+
+ h1 {
+    font-size: 					@fontSize-xxl;
+    line-height:				@lineHeight-xl;
+}
+ h2 {
+    font-size: 					@fontSize-xl;
+    line-height:				@lineHeight-xl;
+}
+ h3 {
+    font-size: 					@fontSize-lg;
+    font-size: 					@fontSize-lg;
+}
+ h4 {
+    font-size: 					@fontSize-base; 
+}
+ h5 {
+    font-size: 					@fontSize-base;
+}
+ h6 {
+    font-size: 					@fontSize-base;
+}
+
+.inverse {
+	p, li, h1, h2, h3, h4, h5, h6 {
+		color: @fontColor-inverse;
+	}
+} 
+ blockquote {
+     border-left: @spacer-xs solid @sodaville-gold;
+     margin: @spacer-lg 0;
+     padding: @spacer-sm @spacer-sm;
+     background-color: fade(@sodaville-gold, 20%);
+     quotes: "\201C""\201D""\2018""\2019";
+}
+ blockquote:before {
+     color: @fontColor-strong;
+     content: open-quote;
+     font-size: @fontSize-xl * 2;
+     line-height: 0.1em;
+     margin-right: @spacer-xs;
+     vertical-align: -0.4em;
+}
+ blockquote:after {
+     color: @fontColor-strong;
+     content: close-quote;
+     font-size: 0em;
+     line-height: 0em;
+     margin-right: 0;
+     vertical-align: 0;
+}
+ blockquote p {
+     display: inline;
+     font-weight: bold;
+}
+
+.diminish {
+	font-size: @fontSize-sm;
+	font-weight: normal;
+}
+.emphasise {}
+
+.article-more {
+	display:				block;
+	font-weight:			bold;
+}
+.nextprev {
+	font-weight:			bold;
+	padding:				(@spacer-xs * 2) @spacer-sm;
+	
+	&.next {
+		background:			@palette-gray;
+		color:				@sodaville-gold;
+		transition: 		@transition-lg;
+		&:hover {
+			background: 	@sodaville-gold;
+			color:			@fontColor-inverse;
+			transition: 	@transition-sm;
+		}
+	}
+	&.prev {
+		//background:			@palette-gray-100;
+		//color:				@fontColor-inverse;
+		transition: 		@transition-lg;
+		&:hover {
+			background: 	@palette-gray;
+			color:			@fontColor-inverse;
+			transition: 	@transition-sm;
+		}
+	}	
+}

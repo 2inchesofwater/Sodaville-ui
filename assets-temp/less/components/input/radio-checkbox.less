@@ -1,0 +1,87 @@
+fieldset {
+	// All styles moved to Critical.less
+}
+
+legend {
+	// All styles moved to Critical.less
+}
+
+input[type=checkbox],
+input[type=radio] {
+	opacity: 0;
+	max-width: 0;
+	position: absolute;
+	+ label {
+		position: relative;
+		flex-direction: row;
+	}
+	+ label:before {
+		content: '';
+		display: block;
+		width: @input-selection-size;
+		height: @input-selection-size;
+		margin-right: @input-selection-gap;
+		
+		background: @input-selection-bg-empty;
+		border: @input-selection-border-empty;
+		transition: @transition-base !important;
+	}
+	+ label:hover {
+		&:before {
+			border: @input-selection-border-hover;
+		}
+	}
+	+ label:active {
+		&:before {
+			border: @input-selection-border-active;
+		}		
+	}
+}
+input[type=checkbox] + label:before {
+		border-radius: @input-checkbox-borderRadius;	
+}
+input[type=radio] + label:before {
+		border-radius: @input-radio-borderRadius;	
+}
+input[type=checkbox]:checked + label:before {
+		background: @input-selection-bg-active;
+		border: @input-selection-border-active;	
+		&:hover {
+			&:before {
+				border: @input-selection-border-active;
+			}
+		}
+}
+
+input[type=checkbox]:checked + label:after {
+	content: @input-checkbox-mark;
+    display: flex;
+    position: absolute;
+    width: @input-selection-mark-size;
+    height: @input-selection-mark-size;
+    justify-content: center;
+    font-size: @input-selection-fontSize;
+    font-weight: @input-selection-fontWeight;
+    color: @input-selection-fontColor;
+    text-shadow: @input-selection-textShadow;	
+}
+
+input[type=radio]:checked + label:before {
+		background: transparent;
+		border: @input-selection-border-active;	
+		&:hover {
+			&:before {
+				border: @input-selection-border-active;
+			}
+		}
+}
+input[type=radio]:checked + label:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	width: @input-selection-mark-size;
+	height: @input-selection-mark-size;
+	border: @input-radio-mark-border;
+	border-radius: @input-selection-fontSize;
+	box-sizing: border-box;
+}

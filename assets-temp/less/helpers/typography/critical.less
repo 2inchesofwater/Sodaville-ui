@@ -1,0 +1,15 @@
+p {
+	// inherits from body
+	margin: 					0 0 @spacer-base 0;
+}
+
+a {
+    color:						@fontColor-link;
+    text-decoration:			none;
+    transition: 				@transition-base !important;
+    &:hover,
+    &:active {
+    	color:					@fontColor-link-hover;
+    	text-decoration: 		@link-decoration;
+    }
+}

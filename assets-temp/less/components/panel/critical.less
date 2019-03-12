@@ -1,0 +1,19 @@
+/* PANEL */
+
+.panel {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+	padding: @panel-padding-handheld; 
+	@media (min-width: @breakpoint-tablet) and ((max-width: @breakpoint-laptop - 1px)) {
+		padding: @spacer-base @spacer-base;
+	}
+	@media (min-width: (@breakpoint-taptop) { 
+		padding: @spacer-base @spacer-lg;	
+	}
+	
+	background: @panel-bg;
+	border: @panel-border;
+	border-radius: @panel-borderRadius;
+}

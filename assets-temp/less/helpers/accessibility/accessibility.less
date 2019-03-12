@@ -1,0 +1,28 @@
+.sr-only {
+  position: 		absolute;
+  z-index:			1020;
+  width:			auto;
+  height:			1px;
+  // padding:			0;
+  overflow: 		hidden;
+  //clip: 			rect(0, 0, 0, 0);
+  white-space:		nowrap;
+  border:			0;
+}
+
+#group__skip {
+	top:			0;
+	width:			100%;
+	height: 		auto;
+ 	max-height:		0;
+ 	transition: 	max-height 0.3s ease-in-out 0.1s !important;
+ 	
+ 	&:focus-within {
+		// position:		fixed;
+		height: 		auto;
+		max-height: 	10rem;
+		// overflow:		visible;
+		// clip:			auto;
+		white-space:	normal;
+	}
+  }

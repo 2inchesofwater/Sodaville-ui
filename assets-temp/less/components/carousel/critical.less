@@ -1,0 +1,21 @@
+/* CAROUSEL */
+
+.carousel-group {
+	display: flex;
+	flex-direction: column;
+	
+	border: @carousel-border;
+}
+
+.carousel-items {
+	display: flex;
+	flex-direction: row;
+	scroll-padding: 0;
+	overflow: auto;
+	
+	.carousel-item {
+		scroll-snap-align: center;
+		flex:100%;
+		min-width:100%;
+	}
+} 
