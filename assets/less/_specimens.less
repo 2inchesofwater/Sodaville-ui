@@ -1,4 +1,4 @@
-@import "variables";
+@import "variables";             
 @import "_index";
 @import (optional) "overrides/specimens/_index"; 
 
@@ -10,12 +10,15 @@ body {
 }
 
 cite {
-	display: block;
+	display: block; 
 	margin: 0 0 @spacer-xs 0;
 	font-size: @fontSize-base;
 	line-height: @lineHeight-base;
 	color: @palette-red-120;
 	font-style: normal;
+}
+p cite {
+	display: inline-block; 
 }
 
 dl {
@@ -105,6 +108,14 @@ body {
 	grid-gap: 2.5vh;
 	grid-template-columns: repeat(1,1fr);
 	margin: 0 0 @spacer-base 0;
+}
+
+.fieldsCollection {
+	&.sample-fields {
+		display: grid;
+		grid-gap: @spacer-sm;
+		grid-template-columns: 2fr 1fr 2fr;
+	}
 }
 
 .swatchesCollection {

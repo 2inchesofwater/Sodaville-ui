@@ -1,6 +1,16 @@
 label {
 	display: block;
 	margin-bottom: @label-gap;
-	font-size: @label-fontSize;
-	color: @label-fontColor;
+	font-size: @label-fontSize-base;
+	color: @label-fontColor-base;
+}
+
+label.help {
+	color: @label-fontColor-help;
+	font-size: @label-fontSize-supplemental;
+}
+
+label.error {
+	color: @label-fontColor-error;
+	font-size: @label-fontSize-supplemental;
 }

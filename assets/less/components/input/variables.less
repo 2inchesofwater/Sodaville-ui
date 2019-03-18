@@ -1,44 +1,46 @@
 /* Input fields */
 @input-padding: @spacer-sm;
-@input-border: 1px solid @palette-gray-10;
-@input-borderBottom: 2px solid @palette-gray-20;
-@input-borderRadius: 0;
+
 @input-bg: @palette-white;
-@input-fontSize: @fontSize-base;
-
-@input-bg-hover: @input-bg;
-@input-border-hover: 1px solid @palette-gray-20;
-@input-borderBottom-hover: 2px solid @palette-gray-40;
-
-@input-bg-active: @input-bg;
-@input-border-active: 1px solid @palette-gray;
-@input-borderBottom-active: 2px solid @palette-gray;
-
-@input-bg-readonly: @input-bg;
-@input-border-readonly: 1px dotted @palette-gray-10;
-@input-borderBottom-readonly: 2px dotted @palette-gray-20;
-
-@input-bg-disabled: lighten(@palette-gray-5,50%);
-@input-border-disabled: 1px solid @palette-gray-10;
-@input-borderBottom-disabled: 2px solid @palette-gray-20;
-
-@input-bg-valid: lighten(@palette-green-80,90%);
-@input-border-valid: 1px solid @palette-green-80;
-@input-borderBottom-valid: 2px solid @palette-green-120;
-
+@input-bg-disabled: @palette-gray-5;
 @input-bg-invalid: lighten(@palette-red-80,90%);
-@input-border-invalid: 1px solid @palette-red-80;
-@input-borderBottom-invalid: 2px solid @palette-red-120;
+@input-bg-readonly: @palette-gray-5;
 
+@input-borderWidth: 1px;
+@input-borderWidth-bottom: 2px;
 
-/* Labels */
-@label-fontSize: @fontSize-base;
-@label-fontColor: @fontColor-soft;
-@label-gap: @spacer-xs;
+@input-borderColor-base: @palette-gray-10;
+@input-borderColor-hover: @palette-gray-20;
+@input-borderColor-active: @palette-gray-40;
+@input-borderColor-disabled: @palette-gray-20;
+@input-borderColor-readonly: @palette-gray-20;
+@input-borderColor-invalid: @palette-red-120;
+@input-borderRadius: 0;
+
+@input-color: @fontColor-base; 
+@input-fontSize: @fontSize-base;
+@input-lineHeight: @lineHeight-base;
+
 
 /* Icons inside inputs */
 @input-icon-gap: @spacer-xs;
 @input-icon-size-inline: @lineHeight-base; // For icons which appear INSIDE a standard text-input field 
+
+
+/* Labels */
+@label-fontSize-base: @fontSize-base;
+@label-fontSize-supplemental: @fontSize-sm;
+
+@label-color-base: @fontColor-base;
+@label-color-help: @fontColor-soft;
+@label-color-error: @palette-red-120;
+
+@label-gap: @spacer-xs;
+
+@label-padding-optional: 0;
+@label-bg-optional: @fontColor-feature;
+@label-color-optional: @fontColor-base;
+
 
 /* Fieldset and Legend */
 @legend-fontSize: @fontSize-base;

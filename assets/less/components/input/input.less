@@ -1,5 +1,6 @@
-input {
-	border-bottom: @input-borderBottom;
+input,
+textarea {
+	border-bottom-width: @input-borderWidth-bottom;
 	border-radius: @input-borderRadius;
 	transition: @transition-base !important;
 	color: @fontColor-base;
@@ -9,29 +10,24 @@ input {
 		color: @fontColor-soft;
 	}
 	&:hover {
-		border: @input-border-hover;
-		border-bottom: @input-borderBottom-hover;
+		border-color: @input-borderColor-hover;
 	}
 	&:active {
-		border: @input-border-active;
-		border-bottom: @input-borderBottom-active;	
+		border-color: @input-borderColor-active;
 	}
 	&:focus,
 	&:focus-within {
 		outline: none;
-		border: @input-border-active;
-		border-bottom: @input-borderBottom-active;	
+		border-color: @input-borderColor-active;
 	}
 	&[readonly] {
 		background: @input-bg-readonly;
-		border: @input-border-readonly;
-		border-bottom: @input-borderBottom-readonly;
+		border-color: @input-borderColor-readonly;
 		pointer-events: none;
 	}
 	&[disabled] {
 		background: @input-bg-disabled;
-		border: @input-border-disabled;
-		border-bottom: @input-borderBottom-disabled;
+		border-color: @input-borderColor-disabled;
 		pointer-events: none;
 	}
 	&:valid {
@@ -40,7 +36,10 @@ input {
 	&:invalid,
 	&:out-of-range {
 		background: @input-bg-invalid;
-		border: @input-border-invalid;
-		border-bottom: @input-borderBottom-invalid;		
+		border-color: @input-borderColor-invalid;
 	}
+}
+
+input + label {
+	margin-top: @label-gap;
 }

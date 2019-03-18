@@ -1,15 +1,16 @@
-input {
+input,
+textarea { 
 	display: block;
 	width: 100%;
 	padding: @input-padding;
 	background: @input-bg;
-	border: @input-border;
+	border: @input-borderWidth solid @input-borderColor-base;
 	
 	font-size: @input-fontSize;
 }
 
 fieldset {
-	border: @input-border;
+	border: @input-borderWidth solid @input-borderColor-base;
 	> ul {
 		display: flex;
 		flex-direction: column;

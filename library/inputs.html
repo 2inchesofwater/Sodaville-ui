@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Sodaville 2019 - Inputs</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<!-- social sharing meta-content -->
+	<link rel="stylesheet" type="text/css" href="../assets/css/specimens.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+</head>
+
+
+<body>
+<section class="wrapper no-grid">
+	<h1>Inputs</h1>
+</section>
+
+<section class="wrapper">
+	<h2>Input</h2>
+	<div class="tilesCollection">
+		<div class="tile">
+			<h3>Text / default</h3>
+			<figure class="sample">
+				<div class="field">
+				  <label class="" for="input-text">Label</label>
+				  <input type="text" id="input-text" class="">
+				  <label class="help" for="input-text">Hint text</label>
+				</div>
+			<figcaption><cite>Input [type="text"]</cite></figcaption>
+			</figure>
+		</div>
+		<div class="tile">
+			<h3>Number</h3>
+			<figure class="sample">
+				<div class="field">
+				  <label class="" for="input-number">Label</label>
+				  <input type="number" id="input-number" class="">
+				  <label class="help" for="input-number">Hint text</label>
+				</div>
+				<figcaption><cite>Input [type="number"]</cite></figcaption>
+			</figure>
+		</div>
+		<div class="tile">
+			<h3>Email</h3>
+			<figure class="sample">
+				<div class="field">
+				  <label class="" for="input-email">Label</label>
+				  <input type="email" id="input-email" class="">
+				  <label class="help" for="input-email">Hint text</label>
+				</div>
+				<figcaption><cite>Input [type="email"]</cite></figcaption>
+			</figure>
+		</div>
+		<div class="tile">
+			<h3>Telephone</h3>
+			<figure class="sample">
+				<div class="field">
+				  <label class="" for="input-tel">Label</label>
+				  <input type="tel" id="input-tel" class="">
+				  <label class="help" for="input-tel">Hint text</label>
+				</div>
+				<figcaption><cite>Input [type="tel"]</cite></figcaption>
+			</figure>
+		</div>
+		<div class="tile">
+			<h3>Multi-line text</h3>
+			<figure class="sample">
+				<div class="field">
+				  <label class="" for="input-textarea">Label <span class="input-label-optional">Optional</span></label>
+				  <textarea id="input-textarea" class="" rows="8" ></textarea>
+				</div>
+				<figcaption><cite>label, textarea</cite></figcaption>
+			</figure>
+		</div>
+		<div class="tile">
+			<h3>Input with inline icon</h3>
+			<figure class="sample">
+				<div class="field">
+				  <label class="" for="input-text">Label</label>
+				  <div class="input-icon" aria-hidden>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M21 3.01H3c-1.1 0-2 .9-2 2V9h2V4.99h18v14.03H3V15H1v4.01c0 1.1.9 1.98 2 1.98h18c1.1 0 2-.88 2-1.98v-14c0-1.11-.9-2-2-2zM11 16l4-4-4-4v3H1v2h10v3z"/></svg>
+				  </div>
+				  <input type="text" id="input-text" class="">
+				</div>
+				<figcaption><cite>icon + input</cite></figcaption>
+			</figure>
+		</div>		
+	</div>
+</section>
+
+<section class="wrapper">
+	<h2>Theming</h2>
+	<div class="tilesCollection">
+		<div class="tile">
+			<h3>Input and Textarea</h3>
+			<dl>
+				<dt><strong>Property</strong></dt>
+				<dd><strong>UI Flex variable names</strong></dt>
+				<dt>Padding</dt>
+				<dd>
+					<cite>@input-padding</cite>
+					<p>Accepts CSS' standard one-, two-, and four-value shortcut syntax</p>
+				</dd>
+				<dt>Background</dt>
+				<dd>
+					<cite>@input-bg-base</cite>
+					<cite>@input-bg-disabled</cite>
+					<cite>@input-bg-invalid</cite>
+					<cite>@input-bg-readonly</cite>
+				</dd>	
+				<dt>Border width</dt>
+				<dd>
+					<cite>@input-borderWidth</cite>
+					<cite>@input-borderWidth-bottom</cite>
+					<p>Each variable accepts one measurement value only</p>
+				</dd>
+				<dt>Border color</dt>
+				<dd>
+					<cite>@input-borderColor-base</cite>
+					<cite>@input-borderColor-hover</cite>
+					<cite>@input-borderColor-active</cite>
+					<cite>@input-borderColor-disabled</cite>
+					<cite>@input-borderColor-readonly</cite>
+					<cite>@input-borderColor-invalid</cite>					
+					<p>Write an override if you want to use a different border-color-bottom property</p>
+				</dd>				
+				<dt>Border-radius</dt>
+				<dd>
+					<cite>@input-borderRadius</cite>
+				</dd>				
+				<dt>Font color</dt>
+				<dd>
+					<cite>@input-color</cite>
+				</dd>				
+				<dt>Font size</dt>
+				<dd>
+					<cite>@input-fontSize</cite>
+				</dd>
+				<dt>Line height</dt>
+				<dd>
+					<cite>@input-lineHeight</cite>
+				</dd>							
+				<dt>Icons</dt>
+				<dd>
+					<cite>@input-icon-size</cite>
+					<cite>@input-icon-gap</cite>
+				</dd>
+			</dl>
+			<p>All input types have a shared :focus state, defined by _____</p>
+			<p>All input types have a base state, as well as :hover and :active states</p>
+			<h3>Labels</h3>
+			<dl>
+				<dt><strong>Property</strong></dt>
+				<dd><strong>UI Flex variable names</strong></dt>
+				<dt>Labels</dt>
+				<dd>
+					<cite>@label-color-base</cite>
+					<cite>@label-fontSize-base</cite>
+				</dd>
+				<dt>Help text</dt>
+				<dd>
+					<cite>@label-color-help</cite>
+					<cite>@label-fontSize-supplemental</cite>
+				</dd>
+				<dt>Error text</dt>
+				<dd>
+					<cite>@label-color-error</cite>
+					<cite>@label-fontSize-supplemental</cite>
+				</dd>				
+			</dl>
+			<h3>Optional</h3>
+			<dl>
+				<dt><strong>Property</strong></dt>
+				<dd><strong>UI Flex variable names</strong></dt>
+				<dt>Padding</dt>
+				<dd>
+					<cite>@label-padding-optional</cite>
+				</dd>
+				<dt>Background</dt>
+				<dd>
+					<cite>@label-bg-optional</cite>
+				</dd>
+				<dt>Font color</dt>
+				<dd>
+					<cite>@label-color-optional</cite>
+				</dd>				
+			</dl>			
+		</div>	
+	</div>
+</section>
+
+<section class="wrapper">	
+	<h2>How to use inputs</h2>
+	<div class="tilesCollection">
+		<div class="tile">
+			<h3>Text-entry inputs</h3>
+			<p>Lets users enter and edit text.</p>
+			<p>HTML provides a variety of input types to suit a range of formats, such as email addresses, telephone numbers, and long-text. The user's input can be validated automatically by the browser. Use the right input type wherever possible</p>
+		</div>
+		<div class="tile">
+			<H3>Labels</h3>
+			<p>In HTML, add a label with a 'for' property to all inputs (which must have a matching 'id' property). This is important for accessibility</p>
+			<p>In Sodaville UI, the label always sits above its input field. We do not follow Material Design's "floating labels" pattern</p>
+			<p>A label <em>above</em> (or before) an input does not need a special class name.</p>
+			<p>A label <em>below</em> (or after) an input requires a class name '<cite>help</cite>' or '<cite>error</cite>'</p>
+		</div>	
+		<div class="tile">
+			<h3>Field</h3>
+			<p>Every input unit - for example: a label, input, and a help label - must be wrapped inside a div element with the class name '<cite>field</cite>'</p>
+		</div>	
+		<div class="tile">
+			<h3>Fields</h3>
+			<p>Sometimes it's helpful to have several input fields side-by-side. For instance, when asking a user for their first and last name.</p>
+			<p>Wrap the group of input units inside a div element with the class name '<cite>fieldsCollection</cite>', plus a unique class name to describe the function of the inputs</p>
+			<p>The behaviour of input fields across a variety of device sizes tends to be quite specific. Therefore, writing a feature-specific set of grid styles will be necessary. </p>
+			<figure class="sample">
+				<div class="fieldsCollection sample-fields">
+					<div class="field">
+					  <label class="" for="input-firstName">First name</label>
+					  <input type="text" id="input-firstName" class="">
+					</div>
+					<div class="field">
+					  <label class="" for="input-middleName">Initial</label>
+					  <input type="text" id="input-middleName" class="">
+					</div>
+					<div class="field">
+					  <label class="" for="input-lastName">Last name</label>
+					  <input type="text" id="input-lastName" class="">
+					</div>					
+				</div>
+			</figure>
+		</div>		
+	</div>
+</section>
+
+	
+</body>
+</html>

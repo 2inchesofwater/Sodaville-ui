@@ -26,10 +26,10 @@ button,
   display: flex;
   align-items: center;
   margin: 0;
-  padding: 0.5rem 1rem;
-  background: transparent;
+  padding: 0.5rem 1.2rem;
+  background: #FFFFFF;
   border: 1px solid #ffe05c;
-  color: #333333;
+  color: #222222;
   transition: all 0.25s ease-in-out !important;
 }
 button.icon,
@@ -73,7 +73,7 @@ button:active,
   background: #ffd833;
   border: 1px solid #ffe05c;
   border-bottom: 2px solid #e5bf1f;
-  color: #333333;
+  color: #222222;
   box-shadow: 0 0 0;
 }
 button.dominant,
@@ -94,10 +94,10 @@ button.dominant:active,
 }
 button.recessive,
 .button.recessive {
-  background: transparent;
+  background: #FFFFFF;
   border: 1px solid #dad9d8;
   border-bottom: 2px solid #C1C0BE;
-  color: #333333;
+  color: #222222;
 }
 button.recessive:hover,
 .button.recessive:hover,
@@ -106,14 +106,14 @@ button.recessive:active,
   background: #ffe05c;
   border: 1px solid #ffe05c;
   border-bottom: 2px solid #e5bf1f;
-  color: #333333;
+  color: #222222;
 }
 button.naked,
 .button.naked {
   background: transparent;
   border: 1px solid transparent;
   border-bottom: 2px solid transparent;
-  color: #333333;
+  color: #222222;
 }
 button.naked:hover,
 .button.naked:hover,
@@ -122,7 +122,7 @@ button.naked:active,
   background: #ffe05c;
   border: 1px solid #ffe05c;
   border-bottom: 2px solid #e5bf1f;
-  color: #333333;
+  color: #222222;
 }
 /* CAROUSEL */
 /* CAROUSEL */
@@ -176,8 +176,8 @@ button.naked:active,
 }
 .picture,
 p img {
-  background: #333333;
-  background: linear-gradient(to top, #4C4945 0%, #333333 100%);
+  background: #222222;
+  background: linear-gradient(to top, #4C4945 0%, #222222 100%);
   position: relative;
   display: flex;
   justify-content: center;
@@ -218,7 +218,7 @@ a.picture img {
 a.picture:after {
   content: '';
   position: absolute;
-  background: linear-gradient(to right, rgba(76, 73, 69, 0.25), rgba(51, 51, 51, 0));
+  background: linear-gradient(to right, rgba(76, 73, 69, 0.25), rgba(34, 34, 34, 0));
   width: 100%;
   height: 100%;
   min-width: 75%;
@@ -235,17 +235,18 @@ a.picture:hover:after {
   transition: all 0.75s ease-in-out;
 }
 /* Input fields */
-/* Labels */
 /* Icons inside inputs */
+/* Labels */
 /* Fieldset and Legend */
 /* Checkboxes and Radio */
-input {
+input,
+textarea {
   display: block;
   width: 100%;
   padding: 0.5rem;
   background: #FFFFFF;
   border: 1px solid #dad9d8;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 fieldset {
   border: 1px solid #dad9d8;
@@ -278,61 +279,76 @@ fieldset label {
   flex-direction: row-reverse;
   align-items: center;
   cursor: pointer;
-  font-size: 0.9rem;
-  color: #333333;
+  font-size: 1rem;
+  color: #222222;
 }
 legend {
-  font-size: 0.9rem;
-  line-height: 1rem;
+  font-size: 1rem;
+  line-height: 1.2rem;
   color: #928D84;
 }
-input {
-  border-bottom: 2px solid #C1C0BE;
+input,
+textarea {
+  border-bottom-width: 2px;
   border-radius: 0;
   transition: all 0.25s ease-in-out !important;
-  color: #333333;
+  color: #222222;
   font-family: 'Raleway', helvetica, arial, sans-serif;
 }
-input::placeholder {
+input::placeholder,
+textarea::placeholder {
   color: #928D84;
 }
-input:hover {
-  border: 1px solid #C1C0BE;
-  border-bottom: 2px solid #928D84;
+input:hover,
+textarea:hover {
+  border-color: #C1C0BE;
 }
-input:active {
-  border: 1px solid #333333;
-  border-bottom: 2px solid #333333;
+input:active,
+textarea:active {
+  border-color: #928D84;
 }
 input:focus,
-input:focus-within {
+textarea:focus,
+input:focus-within,
+textarea:focus-within {
   outline: none;
-  border: 1px solid #333333;
-  border-bottom: 2px solid #333333;
+  border-color: #928D84;
 }
-input[readonly] {
-  background: #FFFFFF;
-  border: 1px dotted #dad9d8;
-  border-bottom: 2px dotted #C1C0BE;
+input[readonly],
+textarea[readonly] {
+  background: #e6e6e5;
+  border-color: #C1C0BE;
   pointer-events: none;
 }
-input[disabled] {
-  background: #ffffff;
-  border: 1px solid #dad9d8;
-  border-bottom: 2px solid #C1C0BE;
+input[disabled],
+textarea[disabled] {
+  background: #e6e6e5;
+  border-color: #C1C0BE;
   pointer-events: none;
 }
 input:invalid,
-input:out-of-range {
+textarea:invalid,
+input:out-of-range,
+textarea:out-of-range {
   background: #ffffff;
-  border: 1px solid #fe7f3a;
-  border-bottom: 2px solid #f35600;
+  border-color: #f35600;
+}
+input + label {
+  margin-top: 0.25rem;
 }
 label {
   display: block;
   margin-bottom: 0.25rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  color: #222222;
+}
+label.help {
   color: #928D84;
+  font-size: 0.9rem;
+}
+label.error {
+  color: #f35600;
+  font-size: 0.9rem;
 }
 input[type=checkbox],
 input[type=radio] {
@@ -349,8 +365,8 @@ input[type=checkbox] + label:before,
 input[type=radio] + label:before {
   content: '';
   display: block;
-  width: 1.3rem;
-  height: 1.3rem;
+  width: 1.4rem;
+  height: 1.4rem;
   margin-right: 0.5rem;
   background: #FFFFFF;
   border: 2px solid #C1C0BE;
@@ -381,13 +397,13 @@ input[type=checkbox]:checked + label:after {
   content: '\2714';
   display: flex;
   position: absolute;
-  width: calc( 1.3rem + 4px);
-  height: calc( 1.3rem + 4px);
+  width: calc( 1.4rem + 4px);
+  height: calc( 1.4rem + 4px);
   justify-content: center;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: bold;
   color: #FFFFFF;
-  text-shadow: 0px 0px 3px rgba(51, 51, 51, 0.15);
+  text-shadow: 0px 0px 3px rgba(34, 34, 34, 0.15);
 }
 input[type=radio]:checked + label:before {
   background: transparent;
@@ -400,15 +416,15 @@ input[type=radio]:checked + label:after {
   content: '';
   position: absolute;
   z-index: -1;
-  width: calc( 1.3rem + 4px);
-  height: calc( 1.3rem + 4px);
+  width: calc( 1.4rem + 4px);
+  height: calc( 1.4rem + 4px);
   border: 0.5rem solid #ffd833;
-  border-radius: 1.2rem;
+  border-radius: 1.3rem;
   box-sizing: border-box;
 }
 /* Menu.less deals with the menu links. A sibling file, Header.less, deals with the layout of the header and its menu */
 nav {
-  background: #333333;
+  background: #222222;
   z-index: 1010;
 }
 nav a {
@@ -443,7 +459,7 @@ nav a:focus {
   padding: 0.25rem;
 }
 .menu__item a:focus {
-  outline: 2px solid #333333;
+  outline: 2px solid #222222;
 }
 #site__menu {
   z-index: 1070;
@@ -459,7 +475,7 @@ nav a:focus {
   right: 0;
   margin: 0;
   padding: 0;
-  background: #333333;
+  background: #222222;
   transition: all 0.75s ease-in-out;
 }
 #site__menu > .wrapper {
@@ -469,7 +485,7 @@ nav a:focus {
   padding: 10vh 10vw;
   background: white;
   border: 0.5rem solid transparent;
-  drop-shadow: 0px 5px 15px rgba(51, 51, 51, 0.15);
+  drop-shadow: 0px 5px 15px rgba(34, 34, 34, 0.15);
 }
 #site__menu[aria-expanded="true"] {
   z-index: 1070;
@@ -515,7 +531,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  background: #333333;
+  background: #222222;
   padding: 10px;
   margin: 0;
 }
@@ -595,7 +611,7 @@ header h1 a:focus {
   height: auto;
   width: 100%;
   border: 0.5rem solid #FFFFFF;
-  box-shadow: 0px 3px 10px rgba(51, 51, 51, 0.15);
+  box-shadow: 0px 3px 10px rgba(34, 34, 34, 0.15);
 }
 /* LOGIN */
 /* LOGIN */
@@ -609,7 +625,7 @@ header h1 a:focus {
   align-items: center;
   justify-content: center;
   background: #FFFFFF;
-  border: 1px solid #333333;
+  border: 1px solid #222222;
   padding: 2vw;
   width: 100%;
   min-height: 560px;
@@ -643,7 +659,7 @@ header h1 a:focus {
   padding-bottom: 4rem;
 }
 .printpage {
-  box-shadow: 0px 5px 15px rgba(51, 51, 51, 0.15);
+  box-shadow: 0px 5px 15px rgba(34, 34, 34, 0.15);
 }
 .sr-only {
   position: absolute;
@@ -684,7 +700,7 @@ h6 {
 }
 p {
   margin-top: 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 pre {
   white-space: pre-wrap;
@@ -695,7 +711,7 @@ pre {
   tab-width: 4;
   background: black;
   color: white;
-  padding: 1rem;
+  padding: 1.2rem;
   font-size: 0.9rem;
 }
 pre[data-lang]::before {
@@ -718,13 +734,13 @@ figcaption {
 hr {
   width: 100%;
   height: 1px;
-  margin-top: 1.2rem;
-  margin-bottom: 1.2rem;
+  margin-top: 1.3rem;
+  margin-bottom: 1.3rem;
   border: 0;
-  border-bottom: 1px solid #333333;
+  border-bottom: 1px solid #222222;
 }
 p {
-  margin: 0 0 1rem 0;
+  margin: 0 0 1.2rem 0;
 }
 a {
   color: #ae7b97;
@@ -760,24 +776,24 @@ p a:focus:after {
   border: 2px dotted #ffd833;
 }
 h1 {
-  font-size: 1.4rem;
-  line-height: 1.3rem;
+  font-size: 3rem;
+  line-height: 1.4rem;
 }
 h2 {
-  font-size: 1.2rem;
-  line-height: 1.3rem;
+  font-size: 1.3rem;
+  line-height: 1.4rem;
 }
 h3 {
-  font-size: 1rem;
+  font-size: 1.15rem;
 }
 h4 {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 h5 {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 h6 {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .inverse p,
 .inverse li,
@@ -791,7 +807,7 @@ h6 {
 }
 blockquote {
   border-left: 0.25rem solid #ffd833;
-  margin: 1.2rem 0;
+  margin: 1.3rem 0;
   padding: 0.5rem 0.5rem;
   background-color: rgba(255, 216, 51, 0.2);
   quotes: "\201C" "\201D" "\2018" "\2019";
@@ -799,7 +815,7 @@ blockquote {
 blockquote:before {
   color: #181818;
   content: open-quote;
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   line-height: 0.1em;
   margin-right: 0.25rem;
   vertical-align: -0.4em;
@@ -817,7 +833,7 @@ blockquote p {
   font-weight: bold;
 }
 .diminish {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: normal;
 }
 .article-more {
@@ -829,7 +845,7 @@ blockquote p {
   padding: 0.5rem 0.5rem;
 }
 .nextprev.next {
-  background: #333333;
+  background: #222222;
   color: #ffd833;
   transition: all 0.75s ease-in-out;
 }
@@ -842,7 +858,7 @@ blockquote p {
   transition: all 0.75s ease-in-out;
 }
 .nextprev.prev:hover {
-  background: #333333;
+  background: #222222;
   color: #FFFFFF;
   transition: all 0.1s ease-in-out;
 }

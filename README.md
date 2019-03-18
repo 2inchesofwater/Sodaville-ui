@@ -31,3 +31,5 @@ Any additional branding changes for the UI get handled by a dedicated /Overrides
 - Images
 - Panel
 - Menu
+
+Regarding the HTML, the intention is to stay as close as practical to native HTML. This means staying away from name-spaced class names as much as practical. Where native HTML elements don't provide enough structure, I tend to refer to Material Design to inform my choices.
